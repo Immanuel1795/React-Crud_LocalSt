@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './Components/Navbar';
 import {
-  Routes ,
+    Switch,
     Route   
   } from "react-router-dom";
 import CreateUser from './Components/CreateUser';
@@ -42,7 +42,7 @@ function App() {
      
       <Navbar />
       <div class="container-fluid">
-              <Routes >  
+              <Switch>  
 
                <Route exact path="/edit-user/:id">
                   <EditUser/>
@@ -66,7 +66,7 @@ function App() {
                 <Route exact path="/">
                   < Home/>
                 </Route>
-              </Routes>
+              </Switch>
      </div>
     </div>
   );
