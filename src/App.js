@@ -2,8 +2,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import {
     Switch,
-    Route,
-   
+    Route   
   } from "react-router-dom";
 import CreateUser from './Components/CreateUser';
 import User from './Components/User';
